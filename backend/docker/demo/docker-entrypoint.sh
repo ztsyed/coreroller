@@ -12,4 +12,4 @@ else
     gosu postgres pg_ctl -w start
 fi
 
-LOGXI=*=WRN LOGXI_FORMAT=happy exec /coreroller/rollerd -http-log -http-static-dir=/coreroller/static -enable-syncer=false
+LOGXI=*=WRN,syncer=DBG LOGXI_FORMAT=happy exec /coreroller/rollerd -http-log -http-static-dir=/coreroller/static -enable-syncer=true

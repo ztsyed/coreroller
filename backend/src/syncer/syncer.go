@@ -25,7 +25,7 @@ import (
 const (
 	coreosUpdatesURL = "https://public.update.core-os.net/v1/update/"
 	coreosAppID      = "{e96281a6-d1af-4bde-9a0a-97b76e56dc57}"
-	checkFrequency   = 1 * time.Hour
+	checkFrequency   = 30 * time.Second
 )
 
 var (
